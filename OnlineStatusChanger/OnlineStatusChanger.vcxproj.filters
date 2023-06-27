@@ -24,7 +24,4 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="G:\Games\steamapps\common\rocketleague\Binaries\Win64\bakkesmod\plugins\settings\OnlineStatusChanger.set" />
-  </ItemGroup>
 </Project>

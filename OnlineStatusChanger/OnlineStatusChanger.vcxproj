@@ -17,7 +17,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -41,7 +41,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(BAKKESMODSDK)include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%APPDATA%\bakkesmod\bakkesmod\bakkesmodsdk\include</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -49,7 +49,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(BAKKESMODSDK)lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>%APPDATA%\bakkesmod\bakkesmod\bakkesmodsdk\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -59,7 +59,7 @@
     <ClCompile Include="OnlineStatusChanger.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="G:\Games\steamapps\common\rocketleague\Binaries\Win64\bakkesmod\plugins\settings\OnlineStatusChanger.set" />
+    <None Include="OnlineStatusChanger.set" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
